@@ -4,6 +4,7 @@ https://github.com/PSAppDeployToolkit/PSAppDeployToolkit/actions/runs/1459449374
 Bug #1 - If you use `LogToSubfolder = $true` in config.psd1 *AND* rename the front script (Invoke-AppDeployToolkit.ps1), the setting of $adtSession.LogTempFolder by PSADT does not happen.
 - To see this, Comment out my 2 `Invoke-MergeNRollLogs` lines in the Front Script and use debug in VsCode.
 - this might also be breaking the ability to expand $Env:Vars from Config.psd1
+- (Please do not fix this in a way that would prevent me to set/change $adtSession.LogTempFolder)
 
 .
 
